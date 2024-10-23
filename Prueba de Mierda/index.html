@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "crearPersona()">Crear persona</button>
+    <div class="ocultable" id="ocultable" style="display: none;">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="nota1">Primera Nota:</label>
+            <input type="text" id="nota1">
+            <label for="nota2">Segunda Nota:</label>
+            <input type="text" id="nota2">
+            <label for="nota3">Tercera Nota:</label>
+            <input type="text" id="nota3">
+            <button onclick="guardarDatos()">Guardar Datos</button>
+        </div>
+    </div>
+    <h3>Nombre: <span id="nombreInfo"></span></h3>
+    <h3>Nota 1: <span id="nota1Info"></span></h3>
+    <h3>Nota 2: <span id="nota2Info"></span></h3>
+    <h3>Nota 3: <span id="nota3Info"></span></h3>
+    <h3>Promedio: <span id="promedio"></span></h3>
+
+    <button onclick = "anteriorPersona()">Anterior persona</button>
+    <button onclick = "siguientePersona()">Siguiente persona</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
